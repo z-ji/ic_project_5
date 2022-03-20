@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Microblog</title>
+    <base href="/"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <script src="index.js"></script>
+    <style>
+        a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<header><h1>Microblog</h1></header>
+<main>
+    <label for="message">What do you want to post?</label>
+    <textarea id="message"></textarea>
+    <br><label for="otp">OTP</label><br><input id="otp"/>
+    <button id="post">Post</button>
+    &nbsp;<span id="error"></span>
+    <h2>Timeline</h2>
+    <button id="refreshTimeline">refresh timeline</button>
+    <dev id="timeline"></dev>
+    <br>
+    <h2>Following</h2>
+    <dev id="following"></dev>
+</main>
+</body>
+</html>
